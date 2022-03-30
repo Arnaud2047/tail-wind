@@ -18,24 +18,40 @@ module.exports = {
 }
 
 
-function ScrollRight (){
-    document.getElementById('m').scrollLeft += 200;
-};
-function ScrollLeft  (){
-    document.getElementById('m').scrollLeft -= 200;
-};
+function leftScroll(carousel) {
+    var scroll = document.querySelector(carousel);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
 
-        // Getting video element using jQuery
-        var video = $("#video");
-  
-        // Check if video is ready to play
-$(video).on('canplay', function () {
-    $(video).mouseenter(function () {
-        $(this).get(0).play();
-    }).mouseleave(function () {
-        $(this).get(0).pause();
-    })
-});
+
+function rightScroll(carousel) {
+    var scroll = document.querySelector(carousel);   
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+
+
+function leftScroll2(carousel2) {
+    var scroll = document.querySelector(carousel2);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
+
+
+function rightScroll2(carousel2) {
+    var scroll = document.querySelector(carousel2);   
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 image_array = [
     'èimage/AAAABXzGwavBQ4vsAhpljRhSZZ7o0UPrZRYf2cz5fcwwJ9aP2-bMG5Jnx_Nx_TGI6439FBLkqWnFBztxcXA6Y0RmjBVcys5DqgbVp29YWXDEYgkP244ZTuMlMiz2_1Dv.jpg',

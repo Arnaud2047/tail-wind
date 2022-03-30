@@ -25,11 +25,6 @@
         height: 0px;
       
       }
-      .carousel__slider {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  transition: transform 0.3s linear;
-}
 
 
 
@@ -143,23 +138,29 @@
 
     <main class="overflow-y: hidden;" >
 
-
-
       <section class="overflow-x-scroll " >
-<div>
+
  
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">TV show</p>
 
-     <div >
-       <nav id="pp"class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider" id="TV show">
+     <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-hidden overflow-x-scroll scroll-smooth carousel1">
+       <nav id="pp"class="flex space-x-4 mt-8 mb-2 ml-10 " id="TV show">
 
-   
+        <button class="mt-20 leftArrow hover:fill-black absolute z-50" onclick="leftScroll('.carousel1','.leftArrow1')">
+          <i class="fas fa-angle-left text-white text-3xl "></i>
+        </button>
 
           <div>
            <div class="w-96">
              <a href="#"><img class="rounded carousel__item" src="image/AAAABXzGwavBQ4vsAhpljRhSZZ7o0UPrZRYf2cz5fcwwJ9aP2-bMG5Jnx_Nx_TGI6439FBLkqWnFBztxcXA6Y0RmjBVcys5DqgbVp29YWXDEYgkP244ZTuMlMiz2_1Dv.jpg"></a>
            </div>
          </div>
+          <div>
+            <div class="w-96">
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABdg2cyGdW4l4LfOw8K4BqRJPUB0dN-Q6sI5wClT7ePaf45Ko9b9b9CShrdylmhphFcAgUERAq3ANHcgbxF2zd80eq_A.jpg"></a>
+            </div>
+          </div>
+
           <div>
             <div class="w-96">
               <a href="#"><img class="rounded carousel__item" src="image/AAAABdg2cyGdW4l4LfOw8K4BqRJPUB0dN-Q6sI5wClT7ePaf45Ko9b9b9CShrdylmhphFcAgUERAq3ANHcgbxF2zd80eq_A.jpg"></a>
@@ -184,92 +185,113 @@
            </div>
          </div>
 
+         <div class="absolute right-0 mt-20 rightArrow">
+          <button class="rotate-180" onclick="rightScroll('.carousel1','rightArrow1')">
+            <i class="fas fa-angle-left text-white text-3xl"></i>
+            </button> 
+          </div>
        </nav>
      </div>
+    </section>
 
-   
- </section>
 
-      <section >
 
-       <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Trending</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
-          <div>
-            <div class="w-76">
-              <a href="#"><img class="rounded carousel__item" src="image/AAAABffOr4y4H40p3evdbBVrLnQmwbGe_HQK7E_Ys_CUSG_dcX7eLpCe8uzRoFzxOERdv4kByL18U83z8i5TG5-X7DYUbsfZr4ODaozyHQVzfrvs42vpJPRAlpsHthZK.jpg"></a>
-            </div>
+
+
+
+    <section class="overflow-x-scroll " >
+
+ 
+      <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Trending</p>
+
+    <div class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-hidden overflow-x-scroll scroll-smooth carousel2">
+      <nav id="pp"class="flex space-x-4 mt-8 mb-2 ml-10 " id="TV show">
+
+       <button class="mt-20 leftArrow hover:fill-black absolute z-50" onclick="leftScroll2('.carousel2','.leftArrow2')">
+         <i class="fas fa-angle-left text-white text-3xl "></i>
+       </button>
+
+         <div>
+          <div class="w-96">
+            <a href="#"><img class="rounded carousel__item" src="image/AAAABffOr4y4H40p3evdbBVrLnQmwbGe_HQK7E_Ys_CUSG_dcX7eLpCe8uzRoFzxOERdv4kByL18U83z8i5TG5-X7DYUbsfZr4ODaozyHQVzfrvs42vpJPRAlpsHthZK.jpg"></a>
           </div>
-
-          <div>
-            <div class="w-76">
-              <a href="#"><img class="rounded carousel__item" src="image/AAAABdAXNKvfk5JASnoNBh1Sm1Fbg6VP4lotjS__-czgjcC1p24iXZlitfGhSHQEtJ-ceLEG8lAgbT3Hn0FwGK6mJPGZ3f3YfqEmXBpBgdN1_RC2AaKCx5r3aVVz4oqA.jpg"></a>
-            </div>
-          </div>
-
-          <div>
-            <div class="w-76">
-              <a href="#"><img class="rounded carousel__item" src="image/AAAABcqDIFeh4L8wliS_mNVrehBfBpGufEzS8T9NTHHQjuLq_GBi8D9gpytx3ZM_vrJjSEM1B8XRzjc1nCZvp-s3-UerMU0.jpg"></a>
-            </div>
-          </div>
-          
-          <div>
-            <div class="w-76">
-              <a href="#"><img class=" rounded carousel__item" src="image/AAAABUg0NWWJofYh37mfInUDFNTgTXZrgFm5iU7EIBtwn6tvjCvTsi34sYXFTKuvPMyPxiJRSgVV3HQGfZHNpAk-JqbmYwH5TmV4ZcEocbbckty56qlJ3G2YbXNpBrBf.jpg"></a>
-            </div>
-          </div>
-
-          <div>
-           <div class="w-76">
-             <a href="#"><img class=" rounded carousel__item" src="image/AAAABX3xi-DMPebmXaEa22VQLUFaj9x0-qVayNOhSzMCxVvtgethdKYyryDxNOPrSOxEraFQHWe1OjrRZ-42JPEJEb-u4PqXJaNl9IkfA0fkgAqi3nMsgkW8TqZZBg3O.jpg"></a>
+        </div>
+         <div>
+           <div class="w-96">
+             <a href="#"><img class="rounded carousel__item" src="image/AAAABdAXNKvfk5JASnoNBh1Sm1Fbg6VP4lotjS__-czgjcC1p24iXZlitfGhSHQEtJ-ceLEG8lAgbT3Hn0FwGK6mJPGZ3f3YfqEmXBpBgdN1_RC2AaKCx5r3aVVz4oqA.jpg"></a>
            </div>
          </div>
-       </nav>
-      </section>
 
+         <div>
+           <div class="w-96">
+             <a href="#"><img class="rounded carousel__item" src="image/AAAABcqDIFeh4L8wliS_mNVrehBfBpGufEzS8T9NTHHQjuLq_GBi8D9gpytx3ZM_vrJjSEM1B8XRzjc1nCZvp-s3-UerMU0.jpg"></a>
+           </div>
+         </div>
 
+         <div>
+           <div class="w-96">
+             <a href="#"><img class="rounded carousel__item" src="image/AAAABUg0NWWJofYh37mfInUDFNTgTXZrgFm5iU7EIBtwn6tvjCvTsi34sYXFTKuvPMyPxiJRSgVV3HQGfZHNpAk-JqbmYwH5TmV4ZcEocbbckty56qlJ3G2YbXNpBrBf.jpg"></a>
+           </div>
+         </div>
+         
+
+         <div>
+          <div class="w-96 ">
+            <a href="#"><img class=" rounded carousel__item" src="image/AAAABX3xi-DMPebmXaEa22VQLUFaj9x0-qVayNOhSzMCxVvtgethdKYyryDxNOPrSOxEraFQHWe1OjrRZ-42JPEJEb-u4PqXJaNl9IkfA0fkgAqi3nMsgkW8TqZZBg3O.jpg"></a>
+          </div>
+        </div>
+
+        <div class="absolute right-0 mt-20 rightArrow">
+         <button class="rotate-180" onclick="rightScroll2('.carousel2','rightArrow2')">
+           <i class="fas fa-angle-left text-white text-3xl"></i>
+           </button> 
+         </div>
+      </nav>
+    </div>
+   </section>
 
 
 
       <section class="w-50">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Origal Netflix - Top 5</p>
-       <nav class="flex space-x-2 mt-4 mb-2 carousel__slider">
+       <nav class="flex space-x-2 mt-4 mb-2">
           <div>
-            <div class="w-96 flex carousel__item">
+            <div class="w-96 flex ">
               <a href="#"><img class=" rounded " src="image/thumbnails_top_1.png"></a>
-              <a href="#"><img class=" rounded" src="image/thumbnails_lupin.png"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/thumbnails_lupin.png"></a>
             </div>
           </div>
 
           
           <div>
-            <div class="w-96 flex carousel__item">
+            <div class="w-96 flex ">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_2.png"></a>
-              <a href="#"><img class=" rounded" src="image/thumbnails_thewitcher.png"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/thumbnails_thewitcher.png"></a>
             </div>
           </div>
 
       
           
           <div>
-            <div class="w-96 flex carousel__item">
+            <div class="w-96 flex ">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_3.png"></a>
-              <a href="#"><img class=" rounded" src="image/thumbnails_enolaholmes.png"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/thumbnails_enolaholmes.png"></a>
             </div>
           </div>
 
           <div>
-            <div class="w-96 flex carousel__item">
+            <div class="w-96 flex ">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_4.png"></a>
-              <a href="#"><img class=" rounded" src="image/thumbnails_blackmirror.png"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/thumbnails_blackmirror.png"></a>
             </div>
           </div>
 
 
           <div>
-           <div class="w-96   carousel__item flex">
+           <div class="w-96    flex">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_5.png"></a>
-             <a href="#"><img class=" rounded " src="image/thumbnails_3_.png"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/thumbnails_3_.png"></a>
            </div>
          </div>
 
@@ -278,7 +300,7 @@
 
       <section class="overflow-hidden ">
 
-       <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16 carousel__slider">Best view</p>
+       <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16 ">Best view</p>
        <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
           <div>
             <div class="w-96 h-30">
@@ -315,7 +337,7 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Series US</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
           <div>
             <div class="w-96">
               <a href="#"><img class="rounded carousel__item" src="image/AAAABTuSr2kGmhxr5mD_1ZNn5ifwk7mMtSlubjmLgwecxBAdh55GCcP8khYwEVmiKLiMHp-cIr-WGkM9voAxlEJ8tUiwDmk.jpg"></a>
@@ -351,7 +373,7 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Anime</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider" id="m">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 " id="m">
           <div>
             <div class="w-96">
               <a href="#"><img class="rounded carousel__item" src="image/AAAABV4egf7wjPrnvUNwq5WxXswErpA6Y_OFFtriZ0OQ2MDbosLQ4qpcpFqc6sDeRktlMJ7UYd36l_xD8bew_Z15gaeKv7A.jpg"></a>
@@ -387,7 +409,7 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Comics</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
           <div>
             <div class="w-96">
               <a href="#"><img class="rounded carousel__item" src="image/AAAABV1Mmt5UvY2pOtq4dIOMmljVAHj73t6KiRzaPsn7rO8gQxHNVid-2YHQv9ApzPk8fM0zRNIWgW8JTJ4zWcTN7qpGrIk1uG6GJY4v-ZE0P1UPdrqNnl3Au20eaI82.jpg"></a>
@@ -423,7 +445,7 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Action</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
           <div>
             <div class="w-96">
               <a href="#"><img class="rounded carousel__item" src="image/AAAABbrDDCUDViO6_IrfnA-hDpk2V80ocn5eAZa8RKPHazvdh_yA3LJ8xbvJKHz9_sREhV6I1DXLknOomJXv3wwcmMGMz8PVG9z4HreO0NEsMq6MdvOZXqrRD4pLY5AK.jpg"></a>
