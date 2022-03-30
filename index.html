@@ -25,7 +25,21 @@
         height: 0px;
       
       }
-     
+      .carousel__slider {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  transition: transform 0.3s linear;
+}
+
+
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translateX(52px);
+}
+.carousel__item:hover {
+  transform: scale(1.2);
+}
+
       </style>
 
       
@@ -137,151 +151,76 @@
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">TV show</p>
 
      <div >
-       <nav id="pp"class="flex space-x-4 mt-8 mb-2 ml-10 " id="TV show">
+       <nav id="pp"class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider" id="TV show">
 
-        <div class="group flex overflow-hidden ml-10 space-x-2" id="TV show">
-          <div class="bg-gradient-to-r from-black absolute text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-[194px] left-0 ">
-          <button class="leftButton" onclick="ScrollLeft('TV show')"><i
-            class="fas fa-angle-left group-hover:visible text-white absolute text-2xl ml-10"></i></button>
-          </div>
-          <div class="bg-gradient-to-l from-black absolute right-2 text-3xl opacity-0 group-hover:opacity-100 pt-12 w-48 h-[194px] ">
-        <button class="rightButton" onclick="ScrollRight('TV show')"><i
-            class="fas fa-angle-right group-hover:visible text-white right-0 absolute text-2xl mr-5"></i></button>
-          </div>
+   
 
           <div>
            <div class="w-96">
-             <a href="#"><img class="rounded" src="image/AAAABXzGwavBQ4vsAhpljRhSZZ7o0UPrZRYf2cz5fcwwJ9aP2-bMG5Jnx_Nx_TGI6439FBLkqWnFBztxcXA6Y0RmjBVcys5DqgbVp29YWXDEYgkP244ZTuMlMiz2_1Dv.jpg"></a>
+             <a href="#"><img class="rounded carousel__item" src="image/AAAABXzGwavBQ4vsAhpljRhSZZ7o0UPrZRYf2cz5fcwwJ9aP2-bMG5Jnx_Nx_TGI6439FBLkqWnFBztxcXA6Y0RmjBVcys5DqgbVp29YWXDEYgkP244ZTuMlMiz2_1Dv.jpg"></a>
            </div>
          </div>
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABdg2cyGdW4l4LfOw8K4BqRJPUB0dN-Q6sI5wClT7ePaf45Ko9b9b9CShrdylmhphFcAgUERAq3ANHcgbxF2zd80eq_A.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABdg2cyGdW4l4LfOw8K4BqRJPUB0dN-Q6sI5wClT7ePaf45Ko9b9b9CShrdylmhphFcAgUERAq3ANHcgbxF2zd80eq_A.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABcAV7Rg8AqjlcIqgQYy9vLdStc6JYwHol_vJt0tkBlhviF3JtRj4cUCG9GjdAPkJVo3C1uTKUh0o4U9BWVxsHexE0dlWuG5jty3OETu_mNRRQ06E0HygJQIrNsJK.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABcAV7Rg8AqjlcIqgQYy9vLdStc6JYwHol_vJt0tkBlhviF3JtRj4cUCG9GjdAPkJVo3C1uTKUh0o4U9BWVxsHexE0dlWuG5jty3OETu_mNRRQ06E0HygJQIrNsJK.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABXhgYL5oY3YKhDxoq-XFCRsWE_F-IDQlbE-9Gr69TLbR2waimQcu5Cunua6lymgqz-Ogdt8L4OW1uhjPyKusR5LVXvc.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABXhgYL5oY3YKhDxoq-XFCRsWE_F-IDQlbE-9Gr69TLbR2waimQcu5Cunua6lymgqz-Ogdt8L4OW1uhjPyKusR5LVXvc.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96 h-min">
-             <a href="#"><img class=" rounded" src="image/AAAABTqhTcAFiMrb2quvgD2Tbihgfp3B9BlCuHu6ojSCwKw-ByhJdyuqcFEjxSE31pwaMw8W5YszXb36XfFBV6X2lfiRn_w.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABTqhTcAFiMrb2quvgD2Tbihgfp3B9BlCuHu6ojSCwKw-ByhJdyuqcFEjxSE31pwaMw8W5YszXb36XfFBV6X2lfiRn_w.jpg"></a>
            </div>
          </div>
-         <button id="red" class="bg-red-500 text-lg focus:outiline-none"> click</button>
+
        </nav>
      </div>
 
    
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </section>
+ </section>
 
       <section >
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Trending</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 overflow-x-auto">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
           <div>
-            <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABffOr4y4H40p3evdbBVrLnQmwbGe_HQK7E_Ys_CUSG_dcX7eLpCe8uzRoFzxOERdv4kByL18U83z8i5TG5-X7DYUbsfZr4ODaozyHQVzfrvs42vpJPRAlpsHthZK.jpg"></a>
+            <div class="w-76">
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABffOr4y4H40p3evdbBVrLnQmwbGe_HQK7E_Ys_CUSG_dcX7eLpCe8uzRoFzxOERdv4kByL18U83z8i5TG5-X7DYUbsfZr4ODaozyHQVzfrvs42vpJPRAlpsHthZK.jpg"></a>
             </div>
           </div>
 
           <div>
-            <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABdAXNKvfk5JASnoNBh1Sm1Fbg6VP4lotjS__-czgjcC1p24iXZlitfGhSHQEtJ-ceLEG8lAgbT3Hn0FwGK6mJPGZ3f3YfqEmXBpBgdN1_RC2AaKCx5r3aVVz4oqA.jpg"></a>
+            <div class="w-76">
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABdAXNKvfk5JASnoNBh1Sm1Fbg6VP4lotjS__-czgjcC1p24iXZlitfGhSHQEtJ-ceLEG8lAgbT3Hn0FwGK6mJPGZ3f3YfqEmXBpBgdN1_RC2AaKCx5r3aVVz4oqA.jpg"></a>
             </div>
           </div>
 
           <div>
-            <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABcqDIFeh4L8wliS_mNVrehBfBpGufEzS8T9NTHHQjuLq_GBi8D9gpytx3ZM_vrJjSEM1B8XRzjc1nCZvp-s3-UerMU0.jpg"></a>
+            <div class="w-76">
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABcqDIFeh4L8wliS_mNVrehBfBpGufEzS8T9NTHHQjuLq_GBi8D9gpytx3ZM_vrJjSEM1B8XRzjc1nCZvp-s3-UerMU0.jpg"></a>
             </div>
           </div>
           
           <div>
-            <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABUg0NWWJofYh37mfInUDFNTgTXZrgFm5iU7EIBtwn6tvjCvTsi34sYXFTKuvPMyPxiJRSgVV3HQGfZHNpAk-JqbmYwH5TmV4ZcEocbbckty56qlJ3G2YbXNpBrBf.jpg"></a>
+            <div class="w-76">
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABUg0NWWJofYh37mfInUDFNTgTXZrgFm5iU7EIBtwn6tvjCvTsi34sYXFTKuvPMyPxiJRSgVV3HQGfZHNpAk-JqbmYwH5TmV4ZcEocbbckty56qlJ3G2YbXNpBrBf.jpg"></a>
             </div>
           </div>
 
           <div>
-           <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABX3xi-DMPebmXaEa22VQLUFaj9x0-qVayNOhSzMCxVvtgethdKYyryDxNOPrSOxEraFQHWe1OjrRZ-42JPEJEb-u4PqXJaNl9IkfA0fkgAqi3nMsgkW8TqZZBg3O.jpg"></a>
+           <div class="w-76">
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABX3xi-DMPebmXaEa22VQLUFaj9x0-qVayNOhSzMCxVvtgethdKYyryDxNOPrSOxEraFQHWe1OjrRZ-42JPEJEb-u4PqXJaNl9IkfA0fkgAqi3nMsgkW8TqZZBg3O.jpg"></a>
            </div>
          </div>
        </nav>
@@ -294,16 +233,17 @@
       <section class="w-50">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Origal Netflix - Top 5</p>
-       <nav class="flex space-x-2 mt-4 mb-2 ">
+       <nav class="flex space-x-2 mt-4 mb-2 carousel__slider">
           <div>
-            <div class="w-96 flex">
+            <div class="w-96 flex carousel__item">
               <a href="#"><img class=" rounded " src="image/thumbnails_top_1.png"></a>
               <a href="#"><img class=" rounded" src="image/thumbnails_lupin.png"></a>
             </div>
           </div>
 
+          
           <div>
-            <div class="w-96 flex">
+            <div class="w-96 flex carousel__item">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_2.png"></a>
               <a href="#"><img class=" rounded" src="image/thumbnails_thewitcher.png"></a>
             </div>
@@ -312,14 +252,14 @@
       
           
           <div>
-            <div class="w-96 flex">
+            <div class="w-96 flex carousel__item">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_3.png"></a>
               <a href="#"><img class=" rounded" src="image/thumbnails_enolaholmes.png"></a>
             </div>
           </div>
 
           <div>
-            <div class="w-96 flex ">
+            <div class="w-96 flex carousel__item">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_4.png"></a>
               <a href="#"><img class=" rounded" src="image/thumbnails_blackmirror.png"></a>
             </div>
@@ -327,7 +267,7 @@
 
 
           <div>
-           <div class="w-96   flex">
+           <div class="w-96   carousel__item flex">
              <a href="#"><img class=" rounded" src="image/thumbnails_top_5.png"></a>
              <a href="#"><img class=" rounded " src="image/thumbnails_3_.png"></a>
            </div>
@@ -338,35 +278,35 @@
 
       <section class="overflow-hidden ">
 
-       <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Best view</p>
+       <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16 carousel__slider">Best view</p>
        <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
           <div>
             <div class="w-96 h-30">
-              <a href="#"><img class="rounded" src="image/AAAABcKPwVEQ4isBg7AscHw95tdBITb50eHNn682qTSYRY3JAHX7uTEIxC_rofx_Qdh_sRv2UawVk5BLwan-bbcPz62eiw8.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABcKPwVEQ4isBg7AscHw95tdBITb50eHNn682qTSYRY3JAHX7uTEIxC_rofx_Qdh_sRv2UawVk5BLwan-bbcPz62eiw8.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABbrfHqw_7_oce6mTYUWyPqkRaexi139tqIm4tEEIO499aouE_hv4RHFQkroM7GepiSfReRAZWEe-yqH77RZmZAFLXLFdeTVGptsrezypEmAiUEpHNEFRluM40KlC.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABbrfHqw_7_oce6mTYUWyPqkRaexi139tqIm4tEEIO499aouE_hv4RHFQkroM7GepiSfReRAZWEe-yqH77RZmZAFLXLFdeTVGptsrezypEmAiUEpHNEFRluM40KlC.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABVq1Ck17Qln2Qls2Jef8AZKXw0s48z1pdLcYi0FQfkevO8xka6lZGAvXdxC6HzpoR7ut5-kC24a-fkwPpGDnDzNhbz8.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABVq1Ck17Qln2Qls2Jef8AZKXw0s48z1pdLcYi0FQfkevO8xka6lZGAvXdxC6HzpoR7ut5-kC24a-fkwPpGDnDzNhbz8.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABSJuucV1Q5aZ4CuTqa3gzDLwKN-smGuBWDEHYUaLNZu76shxhoaLorPUMnvNcjiXYZgdcTGni979ARAgACqRvpmab1U.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABSJuucV1Q5aZ4CuTqa3gzDLwKN-smGuBWDEHYUaLNZu76shxhoaLorPUMnvNcjiXYZgdcTGni979ARAgACqRvpmab1U.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg"></a>
            </div>
          </div>
        </nav>
@@ -375,34 +315,34 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Series US</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABTuSr2kGmhxr5mD_1ZNn5ifwk7mMtSlubjmLgwecxBAdh55GCcP8khYwEVmiKLiMHp-cIr-WGkM9voAxlEJ8tUiwDmk.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABTuSr2kGmhxr5mD_1ZNn5ifwk7mMtSlubjmLgwecxBAdh55GCcP8khYwEVmiKLiMHp-cIr-WGkM9voAxlEJ8tUiwDmk.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABTdvd7FR_X9v03FAVmLgTC9Kh2YOCI8RjhRi2GFrWKqFSx3FAzIzmQbrBcWSqirIRaGynppDXrmBBp4UulBfJdCM2DjFbbko1rd1GuEIWXcd0h-AU6JiFRXsvjiv.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABTdvd7FR_X9v03FAVmLgTC9Kh2YOCI8RjhRi2GFrWKqFSx3FAzIzmQbrBcWSqirIRaGynppDXrmBBp4UulBfJdCM2DjFbbko1rd1GuEIWXcd0h-AU6JiFRXsvjiv.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABZfgHZMIuwHVuG033KMYHRi5sxkjPIfVxmoE-wfGl0_H7DPPdRNIyK4P1wlkD57yzra97xGQi1vX6zXL_kicQHrBylVcSUNFYhZm-7zZCyIW0D6_9391sHA8oseG.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABZfgHZMIuwHVuG033KMYHRi5sxkjPIfVxmoE-wfGl0_H7DPPdRNIyK4P1wlkD57yzra97xGQi1vX6zXL_kicQHrBylVcSUNFYhZm-7zZCyIW0D6_9391sHA8oseG.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABX-9_LBD9s43y0JSL1XGl8RtiEcyr3t1--c1UiKQCRDbeQ7uBSfGVnirmWgSdlrXDWxfVBMqv8a6pZXJkSMvfS_TFEc.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABX-9_LBD9s43y0JSL1XGl8RtiEcyr3t1--c1UiKQCRDbeQ7uBSfGVnirmWgSdlrXDWxfVBMqv8a6pZXJkSMvfS_TFEc.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABdlq3X7VUhrqND3Ivvx1P-tPADqn5iOx19oQ8UOERYB_hFD82i2hpwxyXUpFpfgNlJvICixG1vOFwXQBPt4YhtT14lM.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABdlq3X7VUhrqND3Ivvx1P-tPADqn5iOx19oQ8UOERYB_hFD82i2hpwxyXUpFpfgNlJvICixG1vOFwXQBPt4YhtT14lM.jpg"></a>
            </div>
          </div>
        </nav>
@@ -411,34 +351,34 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Anime</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 " id="m">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider" id="m">
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABV4egf7wjPrnvUNwq5WxXswErpA6Y_OFFtriZ0OQ2MDbosLQ4qpcpFqc6sDeRktlMJ7UYd36l_xD8bew_Z15gaeKv7A.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABV4egf7wjPrnvUNwq5WxXswErpA6Y_OFFtriZ0OQ2MDbosLQ4qpcpFqc6sDeRktlMJ7UYd36l_xD8bew_Z15gaeKv7A.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABVs1tKVt59sEaN9JoYJ5-0hrDG-o2WukheETIYYWB3eSK6Wdq0aitRYBQJZDARtml6qi_cjP6sbOIVgdN3OXWD_71U8.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABVs1tKVt59sEaN9JoYJ5-0hrDG-o2WukheETIYYWB3eSK6Wdq0aitRYBQJZDARtml6qi_cjP6sbOIVgdN3OXWD_71U8.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABRR_QQG5wPky6Ejun5NR_j8RRmlpxh_La8Teore7woldGccpE8kcWL8quSNfuHyvV7ZTuYkOXlUa_wylEWxHEDbzLEY.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABRR_QQG5wPky6Ejun5NR_j8RRmlpxh_La8Teore7woldGccpE8kcWL8quSNfuHyvV7ZTuYkOXlUa_wylEWxHEDbzLEY.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABR9sB1qlnHVGETVThJF2biCpQsdti4gCeqp7TTesi54GnVdHmvEXmfbp_uouVicsBS_kvEH7XfIFGdb4vEllD9mJfSA.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABR9sB1qlnHVGETVThJF2biCpQsdti4gCeqp7TTesi54GnVdHmvEXmfbp_uouVicsBS_kvEH7XfIFGdb4vEllD9mJfSA.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABYPVq9gF0_XCkIqdOt1qvtz4ikZyv3yWrmjAtkpZUakaS4o_sm5KK8QVfPxAk_q8HVuznRejeRAuuGPDx8Nwl2m-E6s.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABYPVq9gF0_XCkIqdOt1qvtz4ikZyv3yWrmjAtkpZUakaS4o_sm5KK8QVfPxAk_q8HVuznRejeRAuuGPDx8Nwl2m-E6s.jpg"></a>
            </div>
          </div>
        </nav>
@@ -447,34 +387,34 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Comics</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABV1Mmt5UvY2pOtq4dIOMmljVAHj73t6KiRzaPsn7rO8gQxHNVid-2YHQv9ApzPk8fM0zRNIWgW8JTJ4zWcTN7qpGrIk1uG6GJY4v-ZE0P1UPdrqNnl3Au20eaI82.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABV1Mmt5UvY2pOtq4dIOMmljVAHj73t6KiRzaPsn7rO8gQxHNVid-2YHQv9ApzPk8fM0zRNIWgW8JTJ4zWcTN7qpGrIk1uG6GJY4v-ZE0P1UPdrqNnl3Au20eaI82.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABZd7CMHu2aplqVtj8n23R6NT7VanAo7e0JEnZp8k7Ku7KkzXx31ntfG-Ny68Qc_VfPP3rMvWy4USXBM3jJqalq3MNMQ.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABZd7CMHu2aplqVtj8n23R6NT7VanAo7e0JEnZp8k7Ku7KkzXx31ntfG-Ny68Qc_VfPP3rMvWy4USXBM3jJqalq3MNMQ.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABb3l7lg70eWIxngDoFDsrywUDhfG85GCHEwoqzlswpfDuNM1a9oizeR6O5nmT2QsuxF76fO902qxG3iWXtcJZVa0o-XXEiJZMmRGf5_SLQCGvTHID_d_kSL7XGlJ.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABb3l7lg70eWIxngDoFDsrywUDhfG85GCHEwoqzlswpfDuNM1a9oizeR6O5nmT2QsuxF76fO902qxG3iWXtcJZVa0o-XXEiJZMmRGf5_SLQCGvTHID_d_kSL7XGlJ.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABQo94_pWdHFTQyS72MOexzjkiyryw_wHkgmWdBb-Hn0Cu3oDFFU2NYDqUleHKvTtcHVKUQfGNc1jadrJwG3TD6hk7M0.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABQo94_pWdHFTQyS72MOexzjkiyryw_wHkgmWdBb-Hn0Cu3oDFFU2NYDqUleHKvTtcHVKUQfGNc1jadrJwG3TD6hk7M0.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABQc3RY0VW0oZJDmFG9c1lkaIlm-iY2a7s9OwtDdcrgdXh8Ak1KixDdSfszhJTYdkb1h1c_oCEElRK7RYC3z1zPr6oS0.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABQc3RY0VW0oZJDmFG9c1lkaIlm-iY2a7s9OwtDdcrgdXh8Ak1KixDdSfszhJTYdkb1h1c_oCEElRK7RYC3z1zPr6oS0.jpg"></a>
            </div>
          </div>
        </nav>
@@ -483,34 +423,34 @@
       <section class="overflow-hidden ">
 
        <p class="text-white font-bold text-2xl space-x-4 pt-4 pl-16">Action</p>
-       <nav class="flex space-x-4 mt-8 mb-2 ml-10 ">
+       <nav class="flex space-x-4 mt-8 mb-2 ml-10 carousel__slider">
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABbrDDCUDViO6_IrfnA-hDpk2V80ocn5eAZa8RKPHazvdh_yA3LJ8xbvJKHz9_sREhV6I1DXLknOomJXv3wwcmMGMz8PVG9z4HreO0NEsMq6MdvOZXqrRD4pLY5AK.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABbrDDCUDViO6_IrfnA-hDpk2V80ocn5eAZa8RKPHazvdh_yA3LJ8xbvJKHz9_sREhV6I1DXLknOomJXv3wwcmMGMz8PVG9z4HreO0NEsMq6MdvOZXqrRD4pLY5AK.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABcBAkU7NI2fua9XQyl3sHlc-wnXMA1ozNL9Go-H40tnfUmJgwNmpVpQ9v0WgePC5ShCMThO4R-7mbyLCyJlAaJCYGQcxG2qnaFpoNS9yBa0V56bZgBCTyMuDvx2Z.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABcBAkU7NI2fua9XQyl3sHlc-wnXMA1ozNL9Go-H40tnfUmJgwNmpVpQ9v0WgePC5ShCMThO4R-7mbyLCyJlAaJCYGQcxG2qnaFpoNS9yBa0V56bZgBCTyMuDvx2Z.jpg"></a>
             </div>
           </div>
 
           <div>
             <div class="w-96">
-              <a href="#"><img class="rounded" src="image/AAAABVYl_g8OlkBnF-kRDisd3YzoCSoLj-tu4NXeZ8blI-qIJ9uP7Ck0BghQRK9vquvcnbtRlDaTFHzuqELy4A1h3hQ53eM.jpg"></a>
+              <a href="#"><img class="rounded carousel__item" src="image/AAAABVYl_g8OlkBnF-kRDisd3YzoCSoLj-tu4NXeZ8blI-qIJ9uP7Ck0BghQRK9vquvcnbtRlDaTFHzuqELy4A1h3hQ53eM.jpg"></a>
             </div>
           </div>
           
           <div>
             <div class="w-96">
-              <a href="#"><img class=" rounded" src="image/AAAABXNrlw2bczJbEbp6yCOjgu7d5o2frDf7MmV_9p7e1yM70zaav9Z9vXETHtpqp4_Pmhc2xRp0jXJjYkjf9d_Kw_Kaq9PCELqoKzZUzvg8oExvDZIYhgXOvH-LrFgf.jpg"></a>
+              <a href="#"><img class=" rounded carousel__item" src="image/AAAABXNrlw2bczJbEbp6yCOjgu7d5o2frDf7MmV_9p7e1yM70zaav9Z9vXETHtpqp4_Pmhc2xRp0jXJjYkjf9d_Kw_Kaq9PCELqoKzZUzvg8oExvDZIYhgXOvH-LrFgf.jpg"></a>
             </div>
           </div>
 
           <div>
            <div class="w-96">
-             <a href="#"><img class=" rounded" src="image/AAAABSu23BFDCOWqfyRrnOhHpsiADF4TvFHaSwAehhScTI41IaubjJlaeiLWX3BBvZBdd70ktBfyFS4cttzi6TRLqovGHAVInv3JUrWxX46eaJnycl7hb9tGZLJenVV7.jpg"></a>
+             <a href="#"><img class=" rounded carousel__item" src="image/AAAABSu23BFDCOWqfyRrnOhHpsiADF4TvFHaSwAehhScTI41IaubjJlaeiLWX3BBvZBdd70ktBfyFS4cttzi6TRLqovGHAVInv3JUrWxX46eaJnycl7hb9tGZLJenVV7.jpg"></a>
            </div>
          </div>
        </nav>
